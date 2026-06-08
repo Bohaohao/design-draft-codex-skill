@@ -1,0 +1,14 @@
+interface:
+  display_name: "DesignDraft"
+  short_description: "Restore Mockplus or CoDesign drafts into project files through Chrome DevTools MCP."
+  default_prompt: "Use $design-draft to restore the user-specified or fallback-matched Mockplus or CoDesign draft into project files. Confirm the business area before editing, restore by units with click-driven node inspection, preserve existing logic, and report style extraction, assets, restoration ratio, and remaining gaps."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "chrome-devtools"
+      description: "Chrome DevTools MCP server"
+
+policy:
+  allow_implicit_invocation: true
+ 
